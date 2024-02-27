@@ -1,14 +1,8 @@
 import React from "react";
 import Filter from "./Filter";
 
-const Filters = ({ categories }) => {
-  return (
-    <div className="filters">
-      {categories.map((cat) => (
-        <Filter key={cat} cat={cat} />
-      ))}
-    </div>
-  );
+const Filters = ({ children }) => {
+  return <div className="filters">{children}</div>;
 };
 
 export default Filters;

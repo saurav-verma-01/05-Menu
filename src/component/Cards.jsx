@@ -1,14 +1,7 @@
 import React from "react";
-import Card from "./Card";
 
-const Cards = ({ showItems }) => {
-  return (
-    <div className="cards">
-      {showItems.map((item) => (
-        <Card key={item.id} {...item} />
-      ))}
-    </div>
-  );
+const Cards = ({ children }) => {
+  return <div className="cards">{children}</div>;
 };
 
 export default Cards;
